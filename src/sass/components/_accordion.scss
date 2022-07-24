@@ -1,0 +1,72 @@
+.accordion {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.accordion-item {
+    height: 7rem;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover > .accordion-header {
+        background-color: darken($color: $color-oscuro, $amount: 9);
+    }
+
+}
+
+.accordion-active {
+    height: 17.8rem;
+}
+
+.accordion-header {
+    display: grid;
+    grid-template-columns: 4rem 1fr 4rem;
+    align-items: center;
+    gap: 1rem;
+    background-color: $color-oscuro;
+    padding: 1.5rem 0;
+
+    & > i {
+        display: grid;
+        place-content: center;
+        color: $color-principal;
+        color: $color-blanco;
+        height: 4rem;
+        cursor: pointer;
+    }
+
+}
+
+.accordion-title {
+    color: $color-blanco;
+}
+
+.accordion-body {
+    background-color: $color-claro;
+    padding-left: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.accordion-desc {
+    width: 90%;
+}
+
+.accordion-time {
+    display: flex;
+    gap: 3rem;
+    margin-top: 1rem;
+}
+
+.accordion-date {
+    background-color: $color-principal;
+    color: $color-blanco;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}

@@ -1,0 +1,26 @@
+.tab {
+    display: flex;
+    gap: 2rem;
+    // padding-bottom: 2rem;
+}
+
+.tab-element {
+    display: inline-block;
+    background-color: $color-claro;
+    color: $color-negro;
+    padding: 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.activo {
+    background-color: $color-oscuro;
+    color: $color-blanco;
+}
+
+.tab-element:hover {
+    background-color: $color-oscuro;
+    color: $color-blanco;
+}

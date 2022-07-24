@@ -1,0 +1,22 @@
+::-webkit-scrollbar {
+    width: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $color-principal;
+    padding-left: 1rem;
+    border-radius: .5rem;
+    
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: $color-oscuro;
+    
+}
+
+::-webkit-scrollbar-corner {
+    border-radius: .5rem;
+}

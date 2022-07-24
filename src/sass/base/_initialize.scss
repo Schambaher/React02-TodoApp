@@ -1,0 +1,27 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.7rem;
+    font-family: $font-family;
+    background-color: $color-claro;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+input, textarea {
+    display: block;
+    outline: none;
+    padding: 0;
+    resize: none;
+}
